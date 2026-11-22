@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block content %}
+<h1>Каталог видеоматериалов</h1>
+<form method="get"><label>Поиск по названию <input name="q" value="{{ query }}"></label>
+<label>Категория <select name="category"><option value="">Все категории</option>
+{% for c in categories %}<option value="{{ c }}" {% if c == category %}selected{% endif %}>{{ c }}</option>{% endfor %}
+</select></label><button>Найти</button><a href="/">Сбросить</a></form>
+<p>Найдено материалов: {{ items|length }}. Общая длительность: {{ duration|duration }}.</p>
+<ul class="catalog">{% for item in items %}<li><h2><a href="/video/{{ item.id }}">{{ item.title }}</a></h2>
+<p>{{ item.category }}. {{ item.duration|duration }}</p></li>{% else %}<li>Материалы не найдены</li>{% endfor %}</ul>
+{% endblock %}

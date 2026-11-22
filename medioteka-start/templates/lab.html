@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block content %}
+<h1>Стенд измерений</h1><p>Одинаковый сценарий для сравнения браузеров. Закройте лишние вкладки.</p>
+<button id="run">Выполнить расчёт</button><pre id="result">Результат появится здесь</pre>
+<p>После прогрева выполните пять повторов. Сохраните все значения и медиану.</p>
+<script src="{{ url_for('static', filename='benchmark.js') }}"></script>{% endblock %}

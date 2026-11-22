@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block content %}
+<h1>Учебная форма входа</h1><p>{{ message }}</p>
+<form method="post"><label>Вымышленный логин <input name="username" autocomplete="username"></label>
+<label>Учебный пароль <input name="password" type="password" autocomplete="current-password"></label>
+<button>Отправить учебные данные</button></form>
+<p>Не используйте настоящие пароли. Браузер может не предложить сохранение для учебной формы.
+Такой результат нужно записать в протокол.</p>{% endblock %}

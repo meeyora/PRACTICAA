@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Git и работа с ветками",
+    "category": "Разработка",
+    "duration": 12,
+    "video": "sample.mp4"
+  },
+  {
+    "id": 2,
+    "title": "Python и проверка данных",
+    "category": "Разработка",
+    "duration": 12,
+    "video": "sample.webm"
+  },
+  {
+    "id": 3,
+    "title": "Конфиденциальность в браузере",
+    "category": "Безопасность",
+    "duration": 12,
+    "video": "sample.mp4"
+  },
+  {
+    "id": 4,
+    "title": "Проверка интерфейса",
+    "category": "Тестирование",
+    "duration": 12,
+    "video": "sample.webm"
+  },
+  {
+    "id": 5,
+    "title": "Ревью программного кода",
+    "category": "Тестирование",
+    "duration": 12,
+    "video": "sample.mp4"
+  },
+  {
+    "id": 6,
+    "title": "Пароли и разрешения сайтов",
+    "category": "Безопасность",
+    "duration": 12,
+    "video": "sample.webm"
+  }
+]

@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block content %}
+<h1>Учебные данные сайта</h1><p>Эта страница использует только локальное хранилище браузера.</p>
+<button id="save">Сохранить учебную настройку</button><button id="read">Прочитать настройку</button>
+<button id="clear">Удалить настройку</button><p id="status" aria-live="polite"></p>
+<p>На странице нет внешних трекеров. Она позволяет исследовать хранение и удаление данных,
+но не подтверждает работу защиты от отслеживания или опасных сайтов.</p>
+<script>
+const statusNode = document.getElementById('status');
+document.getElementById('save').onclick = () => {localStorage.setItem('practice-theme','light');statusNode.textContent='Учебная настройка сохранена';};
+document.getElementById('read').onclick = () => {statusNode.textContent=localStorage.getItem('practice-theme') || 'Настройка отсутствует';};
+document.getElementById('clear').onclick = () => {localStorage.removeItem('practice-theme');statusNode.textContent='Учебная настройка удалена';};
+</script>{% endblock %}
